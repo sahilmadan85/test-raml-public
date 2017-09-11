@@ -1,0 +1,17 @@
+#%RAML 1.0 Library
+usage: data types specific to this api
+
+types: 
+  employeeType:
+   type: object
+   properties: 
+     employeeId: string
+     firstName: string
+     lastName: string
+     address?: string
+     contactNumber: string
+     email: string
+     department: string
+     
+  employees: employeeType[]
+  employee: employeeType
